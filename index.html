@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My First Website!</h1>
+        <p>This is my first coding project - Learning HTML, CSS & JavaScript</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#interactive">Interactive</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi! I'm learning web development with HTML, CSS, and JavaScript. This is my first coding project and I'm excited to build amazing websites!</p>
+            <p>I'm a complete beginner, but I'm committed to learning and improving my skills every day.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills I'm Learning</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <h3>HTML</h3>
+                    <p>Building the structure and content of web pages</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>CSS</h3>
+                    <p>Creating beautiful designs and layouts</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>JavaScript</h3>
+                    <p>Making websites interactive and dynamic</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 40%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <h3>📱 My First Website</h3>
+                    <p>A personal portfolio website showcasing my skills and projects. Built with HTML, CSS, and JavaScript.</p>
+                    <button class="project-btn" onclick="viewProject('My First Website')">View Project</button>
+                </div>
+                <div class="project-card">
+                    <h3>🎨 Coming Soon</h3>
+                    <p>I'm working on more projects! Stay tuned for exciting web development projects.</p>
+                    <button class="project-btn" onclick="viewProject('Future Project')">Learn More</button>
+                </div>
+                <div class="project-card">
+                    <h3>🚀 Future Goals</h3>
+                    <p>Building responsive websites, learning frameworks, and creating amazing user experiences.</p>
+                    <button class="project-btn" onclick="viewProject('Future Goals')">Explore</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Section -->
+        <section id="interactive">
+            <h2>Interactive Features</h2>
+            <div class="interactive-container">
+                <div class="interactive-box">
+                    <h3>Button 1: Simple Click</h3>
+                    <button id="myButton" class="btn-primary">Click Me!</button>
+                    <p id="message"></p>
+                </div>
+
+                <div class="interactive-box">
+                    <h3>Button 2: Change Color</h3>
+                    <button id="colorButton" class="btn-success">Change Background Color</button>
+                    <p id="colorMessage"></p>
+                </div>
+
+                <div class="interactive-box">
+                    <h3>Button 3: Count Clicks</h3>
+                    <button id="countButton" class="btn-info">Count My Clicks</button>
+                    <p id="countMessage">Clicks: 0</p>
+                </div>
+
+                <div class="interactive-box">
+                    <h3>Button 4: Show Greeting</h3>
+                    <input type="text" id="nameInput" placeholder="Enter your name">
+                    <button id="greetButton" class="btn-warning">Greet Me!</button>
+                    <p id="greetMessage"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><strong>Email:</strong> your-email@example.com</p>
+                    <p><strong>GitHub:</strong> github.com/Ray-Raydiant</p>
+                    <p><strong>Location:</strong> Your City, Your Country</p>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Me a Message</h3>
+                    <form id="contactForm">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My First Website. All rights reserved.</p>
+        <p>Made with ❤️ by Ray-Raydiant</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
